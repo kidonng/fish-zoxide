@@ -56,6 +56,8 @@ When this plugin is created, there are 3 trash tools on Homebrew, each with its 
   - [Does not use macOS trash](https://github.com/andreafrancia/trash-cli/issues/127)
   - [Does not run if installed with Homebrew](https://github.com/andreafrancia/trash-cli/issues/183)
 
+Oh My Fish [`osx` plugin](https://github.com/oh-my-fish/plugin-osx) (which provides `trash` function) doesn't support **Put Back** either.
+
 ## Performance
 
 This plugin uses [AppleScript](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html), which is the best way to interact with macOS but may not be performant.
