@@ -27,6 +27,7 @@ function trash -d "Move files to the Trash"
             set -a paths $path
         else
             echo trash: $arg does not exist
+            set error
         end
     end
 
@@ -38,5 +39,9 @@ function trash -d "Move files to the Trash"
         # https://apple.stackexchange.com/a/162354
         set files 'POSIX file "'$paths'"'
         command osascript -e 'tell app "Finder" to move {'(string join , $files)'} to trash' >/dev/null
+    end
+
+    if set -q error
+        return 1
     end
 end
