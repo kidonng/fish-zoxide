@@ -16,8 +16,7 @@ function trash -d "Move files to the Trash"
     set paths
 
     for arg in $argv
-        # TODO: Use `builtin realpath -s` after Fish 3.2
-        set path (_normalize_path $arg)
+        set path (builtin realpath -s $arg)
 
         if builtin contains $path $paths
             continue

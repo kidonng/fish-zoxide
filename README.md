@@ -8,6 +8,8 @@
 
 ## Installation
 
+Fish 3.2.0 or above is required.
+
 - [Fish plug](https://github.com/kidonng/fish-plug)
 
   ```sh
